@@ -58,12 +58,19 @@ class StopwatchAppState extends State<StopwatchApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Banipierzat-inatorul"),
+        title: Text("Banipierdut-inatorul"),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Positioned(
+              top: 0.0,
+              right: 0.0,
+              child: Image.asset(
+                "assets/images/euroisuparat.gif",
+              ),
+            ),
             Text(
               "${stopwatch.elapsed.inHours.toString().padLeft(2, '0')}:${(stopwatch.elapsed.inMinutes % 60).toString().padLeft(2, '0')}:${(stopwatch.elapsed.inSeconds % 60).toString().padLeft(2, '0')}",
               style: TextStyle(fontSize: 50.0),
@@ -111,13 +118,6 @@ class StopwatchAppState extends State<StopwatchApp> {
                 ),
               ],
             ),
-            Positioned(
-              top: 0.0,
-              right: 0.0,
-              child: Image.asset(
-                "assets/images/euroi.jpg",
-              ),
-            ),
           ],
         ),
       ),
@@ -133,7 +133,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aplicatie de cacat ',
+      title: 'Banipierdut-inatorul',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
