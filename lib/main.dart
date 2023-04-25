@@ -13,7 +13,7 @@ class StopwatchAppState extends State<StopwatchApp> {
   double rate =
       13.5; // schimba aici cu cat castigi tu pe ora TODO: adauga un input field
 
-  void _startStopwatch() {
+  void startStopwatch() {
     setState(() {
       stopwatch.start();
       timer = Timer.periodic(Duration(seconds: 1), (timer) {
@@ -24,7 +24,7 @@ class StopwatchAppState extends State<StopwatchApp> {
     });
   }
 
-  void _stopStopwatch() {
+  void stopStopwatch() {
     setState(() {
       stopwatch.stop();
       timer?.cancel();
@@ -32,10 +32,17 @@ class StopwatchAppState extends State<StopwatchApp> {
     });
   }
 
-  void _resetStopwatch() {
+  void resetStopwatch() {
     setState(() {
       stopwatch.reset();
       earnings = 0.0;
+    });
+  }
+
+  void updateRate(String value) {
+    setState(() {
+      rate = double.parse(value);
+      earnings = stopwatch.elapsed.inSeconds / 3600 * rate;
     });
   }
 
@@ -71,12 +78,35 @@ class StopwatchAppState extends State<StopwatchApp> {
               children: [
                 ElevatedButton(
                   onPressed:
-                      stopwatch.isRunning ? _stopStopwatch : _startStopwatch,
+                      stopwatch.isRunning ? stopStopwatch : startStopwatch,
+                  style: stopwatch.isRunning
+                      ? ElevatedButton.styleFrom(primary: Colors.red)
+                      : ElevatedButton.styleFrom(primary: Colors.blue),
                   child: Text(stopwatch.isRunning ? "Stop" : "DA I TATI "),
                 ),
                 ElevatedButton(
-                  onPressed: _resetStopwatch,
+                  onPressed: resetStopwatch,
                   child: Text("Restart"),
+                ),
+              ],
+            ),
+            SizedBox(height: 20.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Ia zi vere cat castigi: "),
+                SizedBox(
+                  width: 100.0,
+                  child: TextFormField(
+                    initialValue: rate.toString(),
+                    keyboardType:
+                        TextInputType.numberWithOptions(decimal: true),
+                    onChanged: updateRate,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      contentPadding: EdgeInsets.all(8.0),
+                    ),
+                  ),
                 ),
               ],
             ),
