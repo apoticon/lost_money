@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'package:flutter/widgets.dart';
 
 class StopwatchApp extends StatefulWidget {
   @override
@@ -109,6 +110,13 @@ class StopwatchAppState extends State<StopwatchApp> {
                   ),
                 ),
               ],
+            ),
+            Positioned(
+              top: 0.0,
+              right: 0.0,
+              child: Image.asset(
+                "assets/images/euroi.jpg",
+              ),
             ),
           ],
         ),
