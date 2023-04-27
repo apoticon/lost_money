@@ -12,7 +12,7 @@ class StopwatchAppState extends State<StopwatchApp> {
   Timer? timer;
   double earnings = 0.0;
   double rate =
-      13.5; // schimba aici cu cat castigi tu pe ora TODO: adauga un input field
+      17.5; //Danut Copae asked why it used to be 13.5 so I switched it to 17.5
 
   void startStopwatch() {
     setState(() {
