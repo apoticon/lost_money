@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "29b98ca340c2e5939f139058b1ae0f23fd7f02ca9c6cfebe6a9595b54632bd65"
+build_start_time: [1682449301, 822736000]
+build_end_time: [1682449314, 889527000]
+inputs:
+  ? "/Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/macos/Flutter/GeneratedPluginRegistrant.swift"
+  : [1682449277, 41953128]
+  ? "/Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/macos/Runner/AppDelegate.swift"
+  : [1681949566, 0]
+  ? "/Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/macos/Runner/MainFlutterWindow.swift"
+  : [1681949566, 0]

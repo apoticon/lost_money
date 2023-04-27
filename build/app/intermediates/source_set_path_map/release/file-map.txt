@@ -1,0 +1,12 @@
+com.example.lost_money.app-jetified-window-java-1.0.0-beta04-0 /Users/apoticon/.gradle/caches/transforms-3/006d93cd422dbc43e89591147c2de572/transformed/jetified-window-java-1.0.0-beta04/res
+com.example.lost_money.app-core-1.6.0-1 /Users/apoticon/.gradle/caches/transforms-3/4ca28c4a71705f8a687c69dda140a277/transformed/core-1.6.0/res
+com.example.lost_money.app-jetified-annotation-experimental-1.1.0-2 /Users/apoticon/.gradle/caches/transforms-3/8965c941cf4bee4d72541b965c7c9d39/transformed/jetified-annotation-experimental-1.1.0/res
+com.example.lost_money.app-jetified-window-1.0.0-beta04-3 /Users/apoticon/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/res
+com.example.lost_money.app-main-4 /Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/android/app/src/main/res
+com.example.lost_money.app-release-5 /Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/android/app/src/release/res
+com.example.lost_money.app-pngs-6 /Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/build/app/generated/res/pngs/release
+com.example.lost_money.app-resValues-7 /Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/build/app/generated/res/resValues/release
+com.example.lost_money.app-rs-8 /Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/build/app/generated/res/rs/release
+com.example.lost_money.app-mergeReleaseResources-9 /Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/build/app/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.example.lost_money.app-mergeReleaseResources-10 /Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/build/app/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.example.lost_money.app-merged_res-11 /Users/apoticon/Documents/Apoticon Industries Projects/Personal Projects/flutter_projects/lost_money/build/app/intermediates/merged_res/release
