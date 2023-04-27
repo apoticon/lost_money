@@ -64,12 +64,8 @@ class StopwatchAppState extends State<StopwatchApp> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Positioned(
-              top: 0.0,
-              right: 0.0,
-              child: Image.asset(
-                "assets/images/euroisuparat.gif",
-              ),
+            Image.asset(
+              "assets/images/euroisuparat.gif",
             ),
             Text(
               "${stopwatch.elapsed.inHours.toString().padLeft(2, '0')}:${(stopwatch.elapsed.inMinutes % 60).toString().padLeft(2, '0')}:${(stopwatch.elapsed.inSeconds % 60).toString().padLeft(2, '0')}",
@@ -142,4 +138,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//netify vercel
+//netify
