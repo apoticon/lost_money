@@ -132,10 +132,9 @@ class MyApp extends StatelessWidget {
       title: 'Banipierdut-inatorul',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        backgroundColor: Colors.white,
+        scaffoldBackgroundColor: Color.fromARGB(0, 255, 255, 255),
       ),
       home: StopwatchApp(),
     );
   }
 }
-//netify
